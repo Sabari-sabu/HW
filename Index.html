@@ -1,50 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed Back For Me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Wall</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body bg color="white">
-    
+<body>
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search feedback..." />
+    <button id="toggleTheme">🌙 Toggle Theme</button>
+     <button id="clearAll">🧹 Clear All Feedback</button>
+    <button id="exportBtn">📤 Export JSON</button>
+  </div>
   
-    <h1>Parasuraman Annadurai</h1>
-    <p>superly teach in github and git </p>
-    <a href="https://www.linkedin.com/in/parasuraman-annadurai-7805101b8/">linkedin</a>
-    <hr>
-    
->>>>>>> master
-    <H1>Gokulapriyan</H1>
-    <p>The session was interactive</p>
-    <a href="https://github.com/gokulapriyandckap/gokulapriyandckap"</a>
-<h1>MANJUNATH </h1>
-<p>today i learn about Git and Github by my friend Maheshwaran</p>
 
-<a href="https://github.com/ManjunathSivasankar"  ></a>
-    <hr/>
-    <h1>PORKALAI SELVI</h1> 
-    <p> This session is useful and he thiught how to contribute in Hacktoberfest</p>
-    <a href="https://www.linkedin.com/in/porkalai-selvi-s-19375b197/"></a>
 
-    <h1>yokesh</h1>
-    <p>
-        awesome session it very usefull
-    </p>
-    <a href="https://github.com/Yokesh40">github</a>
-    <h1>Dynamic</h1>
-    <p>Mahesh is good contributor /Thanks to devspace/</p>
-    
-     <h1>Sivashankaran</h1>
-    <p>
-       Don't let your spirit down
-    </p>
-    <a href="https://github.com/Shivaspark">github</a>
-    <h1>Dynamic</h1>
-    <p>Mahesh is good contributor /Thanks to devspace/</p>
+  <div class="container">
+    <h1 class="main-title">💬 Feedback Wall</h1>
 
-    
+    <form id="feedbackForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="url" id="profileLink" placeholder="GitHub/LinkedIn URL" required />
+      <textarea id="feedback" placeholder="Your Feedback" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div class="grid" id="feedbackGrid"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
